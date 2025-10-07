@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 0.1rem solid black; */
+  border: 0.1rem solid black; */
 }
 
 html {
@@ -12,6 +12,9 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: rgb(249, 246, 246);
+  width: 100%;
+  margin: 0 auto;
+  
 }
 
 h1, h2, h3 {
@@ -29,6 +32,8 @@ h2 {
 h3 {
   font-size: 2.2rem;
   background-color: rgb(225, 225, 225);
+  width: 100%;
+  text-align: center;
 }
 
 p {
@@ -47,7 +52,6 @@ header {
 
 header img {
   height: 8rem;
-  width: 100%;
 }
 
 header ul {
@@ -84,10 +88,16 @@ form button:hover {
   background-color: rgb(254, 213, 48);
 }
 
+#email {
+  height: 3rem;
+  width: 200px;
+}
+
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 8rem 2rem 2rem;
+  width: 100%;
 }
 
 .form {
@@ -165,6 +175,7 @@ main {
   background-color: rgb(255, 170, 0);
   transition: background-color 0.3s ease;
   padding: 1rem;
+  margin-bottom: 1.2rem;
   border-radius: 2px;
 }
 
@@ -172,8 +183,17 @@ main {
   background-color: rgb(254, 213, 48);
 }
 
+#valve, #tenor, #bass {
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 100%;
+  margin: 0 2rem;
+}
+
 footer {
   background-color: rgb(225, 225, 225);
+  margin-top: 15rem;
+  width: 100%;
 }
 
 .footer_navbar {
@@ -186,13 +206,13 @@ footer ul {
 }
 
 footer ul li {
-  margin: 0 1rem;
+  margin: 1rem;
   font-size: 1.4rem;
 }
 
 footer p {
   text-align: right;
-  margin: 1rem;
+  padding: 2rem;
 }
 
 @media only screen and (max-width: 750px) {
