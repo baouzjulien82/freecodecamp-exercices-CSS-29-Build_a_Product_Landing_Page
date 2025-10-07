@@ -1,0 +1,202 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 0.1rem solid black; */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(249, 246, 246);
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 2.1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+  background-color: rgb(225, 225, 225);
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+header {
+  width: 100%;
+  height: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  top: 0;
+  background-color: rgb(249, 246, 246);
+}
+
+header img {
+  height: 8rem;
+  width: 100%;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul li {
+  margin: 0 1rem;
+  font-size: 1.4rem;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+form button {
+  background-color: rgb(255, 170, 0);
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 2px;
+}
+
+form button:hover {
+  background-color: rgb(254, 213, 48);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 8rem 2rem 2rem;
+}
+
+.form {
+  grid-column: 1 /-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.form input {
+  margin: 1rem auto;
+}
+
+.form button {
+  display: block;
+  margin: 1.5rem auto;
+}
+
+#features {
+  grid-column: 1 / -1;
+}
+
+.feature1, .feature2, .feature3 {
+  display: flex;
+  align-items: flex-start;
+  margin: 6rem auto;
+}
+
+.icon1, .icon2, .icon3 {
+  color: rgb(255, 170, 0);
+  font-size: 1.5rem;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 4rem;
+}
+
+#how_it_works {
+  grid-column: 1 /-1;
+  margin: 8rem auto;
+}
+
+#pricing {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#pricing ul {
+  list-style: none;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#pricing div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+#pricing li {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+#pricing button {
+  background-color: rgb(255, 170, 0);
+  transition: background-color 0.3s ease;
+  padding: 1rem;
+  border-radius: 2px;
+}
+
+#pricing button:hover {
+  background-color: rgb(254, 213, 48);
+}
+
+footer {
+  background-color: rgb(225, 225, 225);
+}
+
+.footer_navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin: 0 1rem;
+  font-size: 1.4rem;
+}
+
+footer p {
+  text-align: right;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 750px) {
+  #nav-bar {
+    display: none;
+  }
+}
