@@ -216,8 +216,49 @@ footer p {
   padding: 2rem;
 }
 
-@media only screen and (max-width: 750px) {
+@media (max-width: 1024px) {
+  #pricing {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  #pricing > div {
+    flex: 1 1 45%; /* 2 colonnes */
+  }
+}
+
+@media (max-width: 750px) {
   #nav-bar {
     display: none;
+  }
+  main {
+    display: block;
+    margin: 8rem 1rem;
+  }
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+  #pricing > div {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+  .feature1, .feature2, .feature3 {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 70%;
+  }
+  #how_it_works {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 55%;
+  }
+  #email {
+    width: 100%;
   }
 }
