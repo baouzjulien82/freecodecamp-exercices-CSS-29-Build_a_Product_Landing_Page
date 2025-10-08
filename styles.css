@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 0.1rem solid black; */
+  /* border: 0.1rem solid black; */
 }
 
 html {
@@ -96,8 +96,8 @@ form button:hover {
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 8rem 2rem 2rem;
-  width: 100%;
+  margin: 8rem auto 2rem;
+  width: calc(100% - 4rem)
 }
 
 .form {
@@ -186,7 +186,8 @@ main {
 #valve, #tenor, #bass {
   border: 1px solid black;
   border-radius: 2px;
-  width: 100%;
+  width: calc(100% - 4rem);
+  flex: 1;
   margin: 0 2rem;
 }
 
