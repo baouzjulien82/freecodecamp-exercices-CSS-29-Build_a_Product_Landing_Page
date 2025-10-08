@@ -216,7 +216,7 @@ footer p {
   padding: 2rem;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   #pricing {
     flex-wrap: wrap;
     gap: 2rem;
@@ -226,7 +226,7 @@ footer p {
   }
 }
 
-@media (max-width: 750px) {
+@media screen and (max-width: 750px) {
   #nav-bar {
     display: none;
   }
@@ -254,7 +254,7 @@ footer p {
   }
 }
 
-@media (max-width: 400px) {
+@media screen and(max-width: 400px) {
   body {
     font-size: 55%;
   }
