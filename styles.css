@@ -124,8 +124,8 @@ main {
 
 .feature1, .feature2, .feature3 {
   display: flex;
-  align-items: flex-start;
-  margin: 6rem auto;
+  align-items: center;
+  margin: 6rem 15%;
 }
 
 .icon1, .icon2, .icon3 {
@@ -147,6 +147,7 @@ main {
   grid-column: 1 / -1;
   display: flex;
   justify-content: space-evenly;
+  margin: auto 10%;
 }
 
 #pricing ul {
